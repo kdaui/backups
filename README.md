@@ -1,2 +1,2 @@
 # backups
-A collection of archived sites that i love. Kept in its original form (not subpages though)
+A collection of archived subpages (or just a subpage) of random websites that i love. Kept in thier original form.
