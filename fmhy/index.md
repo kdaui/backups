@@ -1,7 +1,9 @@
 <style>
  body {
   background-color: #000;
-  text-color: #fff;
+ }
+ p {
+  color: #fff
  }
 </style>
 ***
