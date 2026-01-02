@@ -1,8 +1,6 @@
 <style>
  body {
   background-color: #000;
- }
- p {
   color: #fff
  }
 </style>
