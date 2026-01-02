@@ -4,7 +4,7 @@
   color: #fff;
  }
 
- li { 
+ a { 
   color: #EB1372;
   text-decoration: underline;
  }
