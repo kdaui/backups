@@ -3,6 +3,11 @@
   background-color: #000;
   color: #fff;
  }
+
+ li { 
+  color: #EB1372;
+  text-decoration: underline;
+ }
 </style>
 
 # ► Adblocking
