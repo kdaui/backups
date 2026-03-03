@@ -6,12 +6,15 @@
     <title>Entries - Kohlibri</title>
     <link rel="stylesheet" href="_next/static/css/1ff9ce597722ed54.css"/>
     <style>
-        body { background-color: #050505; color: white; }
-        .accordion-ul { display: none; background: rgba(20,20,20,0.8); }
-        .accordion.active .accordion-ul { display: block; }
-        .accordion-button { cursor: pointer; text-align: left; transition: 0.2s; }
-        .accordion-button:after { content: ' +'; float: right; opacity: 0.5; }
-        .accordion.active .accordion-button:after { content: ' −'; }
+        .accordion-ul { 
+            transition: max-height 0.3s ease-out; 
+            max-height: 0; 
+            overflow: hidden; 
+        }
+        .accordion.active .accordion-ul { 
+            max-height: 2000px;
+        }
+        .bg { background-color: #050505; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
     </style>
 </head>
 <body class="__className_aa2e48">
@@ -19,143 +22,72 @@
     
     <ol class="w-full m-auto flex max-w-4xl p-4 pt-4 gap-3 text-sm sm:text-base sm:pt-10" aria-label="Breadcrumb">
         <li><a class="text-primary-blue hover:underline" href="index.html">Home</a></li>
-        <li class="flex flex-row"><span class="mr-3 inline-block select-none font-light text-white/80">&gt;</span><span class="capitalize font-light text-white/80 underline">entries</span></li>
+        <li class="flex flex-row"><span class="mr-3 inline-block select-none font-light text-white/80" aria-hidden="true">&gt;</span><span class="capitalize font-light text-white/80 underline">entries</span></li>
     </ol>
 
     <main class="w-full m-auto flex max-w-4xl flex-col items-center px-2 overflow-x-hidden">
-        <div class="relative mb-2 mt-4 flex sm:mb-4 sm:mt-4">
+        <div class="fly-right-fade relative mb-2 mt-4 flex sm:mb-4 sm:mt-4">
             <h1 class="text-3xl font-semibold sm:text-4xl">Entries</h1>
         </div>
 
-        <section class="mb-8 w-full text-center">
+        <section class="mb-4 w-full text-center">
             <h2 class="mb-2 text-xl font-semibold sm:text-2xl">Chapter 1: Synchronicity</h2>
             <ul class="w-full max-w-xl mx-auto text-left leading-[1.5rem]">
                 
                 <li class="accordion">
-                    <button class="accordion-button w-full bg-primary-red py-0.5 px-4 font-medium hover:bg-white hover:text-black">The Penrose</button>
+                    <button class="accordion-button z-0 mb-1 w-full bg-primary-red py-0.5 text-base font-medium hover:bg-off-white hover:text-black">The Penrose</button>
                     <ul class="accordion-ul">
-                        <li><a href="entries/Penrose-Type-Vessel-Field-Operations-Manual/1.html" class="flex px-4 py-1 hover:bg-primary-red">Penrose-Type Vessel Manual</a></li>
-                        <li><a href="entries/Smeared-Diary-Page/1.html" class="flex px-4 py-1 hover:bg-primary-red">Smeared Diary Page</a></li>
+                        <li><a href="entries/Penrose-Type-Vessel-Field-Operations-Manual/1.html" class="flex flex-col px-4 py-1 text-base hover:bg-primary-red sm:flex-row"><div>Penrose-Type Vessel Manual</div><div class="text-sm font-light text-white/80 sm:ml-auto">&lt;Stern Hall&gt;</div></a></li>
+                        <li><a href="entries/Smeared-Diary-Page/1.html" class="flex flex-col px-4 py-1 text-base hover:bg-primary-red sm:flex-row"><div>Smeared Diary Page</div><div class="text-sm font-light text-white/80 sm:ml-auto">&lt;Personnel&gt;</div></a></li>
                     </ul>
                 </li>
 
                 <li class="accordion">
-                    <button class="accordion-button w-full bg-primary-red py-0.5 px-4 font-medium hover:bg-white hover:text-black">Reeducation</button>
+                    <button class="accordion-button z-0 mb-1 w-full bg-primary-red py-0.5 text-base font-medium hover:bg-off-white hover:text-black">Reeducation</button>
                     <ul class="accordion-ul">
-                        <li><a href="entries/Welcome-to-S-23-Sierpinski/1.html" class="flex px-4 py-1 hover:bg-primary-red">Welcome to S-23 Sierpinski</a></li>
-                        <li><a href="entries/The-Rule-of-Six/1.html" class="flex px-4 py-1 hover:bg-primary-red">The Rule of Six</a></li>
-                        <li><a href="entries/Keep-Records%21/1.html" class="flex px-4 py-1 hover:bg-primary-red">Keep Records!</a></li>
-                        <li><a href="entries/No-running-in-the-hallways%21/1.html" class="flex px-4 py-1 hover:bg-primary-red">No running in the hallways!</a></li>
-                        <li><a href="entries/Memorandum-Wall-Safe-Codes/1.html" class="flex px-4 py-1 hover:bg-primary-red">Memorandum: Wall Safe Codes</a></li>
-                        <li><a href="entries/Service-Request-Form-F-29/1.html" class="flex px-4 py-1 hover:bg-primary-red">Service Request Form F-29</a></li>
-                        <li><a href="entries/Memorandum-Terminology/1.html" class="flex px-4 py-1 hover:bg-primary-red">Memorandum: Terminology</a></li>
-                        <li><a href="entries/Mond%26T%c3%b6chter-High-Security-Wall-Safe-(Numeric)/1.html" class="flex px-4 py-1 hover:bg-primary-red">Mond & Töchter Safe</a></li>
-                        <li><a href="entries/Isa%27s-Note/1.html" class="flex px-4 py-1 hover:bg-primary-red">Isa's Note</a></li>
-                        <li><a href="entries/Dictionary/1.html" class="flex px-4 py-1 hover:bg-primary-red">Dictionary</a></li>
+                        <li><a href="entries/Welcome-to-S-23-Sierpinski/1.html" class="flex flex-col px-4 py-1 hover:bg-primary-red sm:flex-row"><div>Welcome to S-23 Sierpinski</div><div class="text-sm text-white/80 sm:ml-auto">&lt;Surface&gt;</div></a></li>
+                        <li><a href="entries/The-Rule-of-Six/1.html" class="flex flex-col px-4 py-1 hover:bg-primary-red sm:flex-row"><div>The Rule of Six</div><div class="text-sm text-white/80 sm:ml-auto">&lt;Corridor&gt;</div></a></li>
+                        <li><a href="entries/Keep-Records%21/1.html" class="flex flex-col px-4 py-1 hover:bg-primary-red sm:flex-row"><div>Keep Records!</div><div class="text-sm text-white/80 sm:ml-auto">&lt;Staff Room&gt;</div></a></li>
+                        <li><a href="entries/Dictionary/1.html" class="flex flex-col px-4 py-1 hover:bg-primary-red sm:flex-row"><div>Dictionary</div><div class="text-sm text-white/80 sm:ml-auto">&lt;Library&gt;</div></a></li>
                     </ul>
                 </li>
 
                 <li class="accordion">
-                    <button class="accordion-button w-full bg-primary-red py-0.5 px-4 font-medium hover:bg-white hover:text-black">Workers</button>
+                    <button class="accordion-button z-0 mb-1 w-full bg-primary-red py-0.5 text-base font-medium hover:bg-off-white hover:text-black">Workers</button>
                     <ul class="accordion-ul">
-                        <li><a href="entries/Scrawled-Note/1.html" class="flex px-4 py-1 hover:bg-primary-red">Scrawled Note</a></li>
-                        <li><a href="entries/Alina%27s-Diary/1.html" class="flex px-4 py-1 hover:bg-primary-red">Alina's Diary</a></li>
-                        <li><a href="entries/Diary/1.html" class="flex px-4 py-1 hover:bg-primary-red">Diary (A64)</a></li>
-                        <li><a href="entries/Interrogation-Report/1.html" class="flex px-4 py-1 hover:bg-primary-red">Interrogation Report</a></li>
-                        <li><a href="entries/Wunderwaffen/1.html" class="flex px-4 py-1 hover:bg-primary-red">Wunderwaffen</a></li>
-                        <li><a href="entries/Service-Request-Form-R-90/1.html" class="flex px-4 py-1 hover:bg-primary-red">Service Request Form R-90</a></li>
-                        <li><a href="entries/About-the-Administrator/1.html" class="flex px-4 py-1 hover:bg-primary-red">About the Administrator</a></li>
-                        <li><a href="entries/Search-Protocol/1.html" class="flex px-4 py-1 hover:bg-primary-red">Search Protocol</a></li>
-                        <li><a href="entries/Frequencies/1.html" class="flex px-4 py-1 hover:bg-primary-red">Frequencies</a></li>
-                        <li><a href="entries/To-Radio-Officer-Yeong%2c-Station-6/1.html" class="flex px-4 py-1 hover:bg-primary-red">To Radio Officer Yeong</a></li>
-                    </ul>
-                </li>
-
-                <li class="accordion">
-                    <button class="accordion-button w-full bg-primary-red py-0.5 px-4 font-medium hover:bg-white hover:text-black">Hospital</button>
-                    <ul class="accordion-ul">
-                        <li><a href="entries/Alina%27s-Diary-(2)/1.html" class="flex px-4 py-1 hover:bg-primary-red">Alina's Diary (2)</a></li>
-                        <li><a href="entries/Patient-EULR-S2321/1.html" class="flex px-4 py-1 hover:bg-primary-red">Patient EULR-S2321</a></li>
-                        <li><a href="entries/Proper-Disposal-of-Corpses/1.html" class="flex px-4 py-1 hover:bg-primary-red">Proper Disposal of Corpses</a></li>
-                        <li><a href="entries/Flood-Drainage-System-Malfunction/1.html" class="flex px-4 py-1 hover:bg-primary-red">Drainage Malfunction</a></li>
-                        <li><a href="entries/Reservoir-Drainage-Instructions/1.html" class="flex px-4 py-1 hover:bg-primary-red">Drainage Instructions</a></li>
-                        <li><a href="entries/Personnel-Grievance-Form-P-14/1.html" class="flex px-4 py-1 hover:bg-primary-red">Grievance Form P-14</a></li>
-                    </ul>
-                </li>
-
-                <li class="accordion">
-                    <button class="accordion-button w-full bg-primary-red py-0.5 px-4 font-medium hover:bg-white hover:text-black">Protektors</button>
-                    <ul class="accordion-ul">
-                        <li><a href="entries/Replika-Overview-STAR/1.html" class="flex px-4 py-1 hover:bg-primary-red">Replika Overview: STAR</a></li>
-                        <li><a href="entries/Replika-Overview-ARAR/1.html" class="flex px-4 py-1 hover:bg-primary-red">Replika Overview: ARAR</a></li>
-                        <li><a href="entries/Replika-Overview-FKLR/1.html" class="flex px-4 py-1 hover:bg-primary-red">Replika Overview: FKLR</a></li>
-                        <li><a href="entries/Replika-Overview-ADLR/1.html" class="flex px-4 py-1 hover:bg-primary-red">Replika Overview: ADLR</a></li>
-                        <li><a href="entries/Replika-Overview-EULR/1.html" class="flex px-4 py-1 hover:bg-primary-red">Replika Overview: EULR</a></li>
-                        <li><a href="entries/Replika-Overview-KLBR/1.html" class="flex px-4 py-1 hover:bg-primary-red">Replika Overview: KLBR</a></li>
-                        <li><a href="entries/Replika-Overview-LSTR/1.html" class="flex px-4 py-1 hover:bg-primary-red">Replika Overview: LSTR</a></li>
-                        <li><a href="entries/Adler%27s-Diary/1.html" class="flex px-4 py-1 hover:bg-primary-red">Adler's Diary</a></li>
-                        <li><a href="entries/Falke%27s-Diary/1.html" class="flex px-4 py-1 hover:bg-primary-red">Falke's Diary</a></li>
+                        <li><a href="entries/Alina%27s-Diary/1.html" class="flex flex-col px-4 py-1 hover:bg-primary-red sm:flex-row"><div>Alina's Diary</div><div class="text-sm text-white/80 sm:ml-auto">&lt;A61&gt;</div></a></li>
+                        <li><a href="entries/Interrogation-Report/1.html" class="flex flex-col px-4 py-1 hover:bg-primary-red sm:flex-row"><div>Interrogation Report</div><div class="text-sm text-white/80 sm:ml-auto">&lt;Office&gt;</div></a></li>
                     </ul>
                 </li>
             </ul>
         </section>
 
-        <section class="mb-8 w-full text-center">
+        <section class="mb-4 w-full text-center">
             <h2 class="mb-2 text-xl font-semibold sm:text-2xl">Chapter 2: Liminality</h2>
             <ul class="w-full max-w-xl mx-auto text-left leading-[1.5rem]">
                 <li class="accordion">
-                    <button class="accordion-button w-full bg-primary-red py-0.5 px-4 font-medium hover:bg-white hover:text-black">Excavation</button>
+                    <button class="accordion-button z-0 mb-1 w-full bg-primary-red py-0.5 text-base font-medium hover:bg-off-white hover:text-black">Excavation</button>
                     <ul class="accordion-ul">
-                        <li><a href="entries/Monofilament-Fiber/1.html" class="flex px-4 py-1 hover:bg-primary-red">Monofilament Fiber</a></li>
-                        <li><a href="entries/Alina%27s-Diary-(3)/1.html" class="flex px-4 py-1 hover:bg-primary-red">Alina's Diary (3)</a></li>
-                        <li><a href="entries/The-Twin-Suns/1.html" class="flex px-4 py-1 hover:bg-primary-red">The Twin Suns</a></li>
-                        <li><a href="entries/Black-Stars/1.html" class="flex px-4 py-1 hover:bg-primary-red">Black Stars</a></li>
-                        <li><a href="entries/A-Sea-of-Flesh/1.html" class="flex px-4 py-1 hover:bg-primary-red">A Sea of Flesh</a></li>
-                    </ul>
-                </li>
-                <li class="accordion">
-                    <button class="accordion-button w-full bg-primary-red py-0.5 px-4 font-medium hover:bg-white hover:text-black">Nowhere</button>
-                    <ul class="accordion-ul">
-                        <li><a href="entries/Offerings/1.html" class="flex px-4 py-1 hover:bg-primary-red">Offerings</a></li>
-                        <li><a href="entries/The-Dreamer/1.html" class="flex px-4 py-1 hover:bg-primary-red">The Dreamer</a></li>
-                        <li><a href="entries/The-Empress%27-Hand/1.html" class="flex px-4 py-1 hover:bg-primary-red">The Empress' Hand</a></li>
-                    </ul>
-                </li>
-                <li class="accordion">
-                    <button class="accordion-button w-full bg-primary-red py-0.5 px-4 font-medium hover:bg-white hover:text-black">Memory</button>
-                    <ul class="accordion-ul">
-                        <li><a href="entries/Operation-Penrose/1.html" class="flex px-4 py-1 hover:bg-primary-red">Operation Penrose</a></li>
-                        <li><a href="entries/Ariane%27s-Notes/1.html" class="flex px-4 py-1 hover:bg-primary-red">Ariane's Notes</a></li>
-                        <li><a href="entries/Together-we-will-be-eternal/1.html" class="flex px-4 py-1 hover:bg-primary-red">Together we will be eternal</a></li>
-                        <li><a href="entries/kill-me/1.html" class="flex px-4 py-1 hover:bg-primary-red">kill me</a></li>
+                        <li><a href="entries/Monofilament-Fiber/1.html" class="flex flex-col px-4 py-1 hover:bg-primary-red sm:flex-row"><div>Monofilament Fiber</div><div class="text-sm text-white/80 sm:ml-auto">&lt;Monowire&gt;</div></a></li>
+                        <li><a href="entries/The-Twin-Suns/1.html" class="flex flex-col px-4 py-1 hover:bg-primary-red sm:flex-row"><div>The Twin Suns</div><div class="text-sm text-white/80 sm:ml-auto">&lt;Shore&gt;</div></a></li>
                     </ul>
                 </li>
             </ul>
         </section>
 
-        <section class="mb-8 w-full text-center">
+        <section class="mb-4 w-full text-center">
             <h2 class="mb-2 text-xl font-semibold sm:text-2xl">Chapter 3: Gestaltzerfall</h2>
             <ul class="w-full max-w-xl mx-auto text-left leading-[1.5rem]">
                 <li class="accordion">
-                    <button class="accordion-button w-full bg-primary-red py-0.5 px-4 font-medium hover:bg-white hover:text-black">Rotfront</button>
+                    <button class="accordion-button z-0 mb-1 w-full bg-primary-red py-0.5 text-base font-medium hover:bg-off-white hover:text-black">Rotfront</button>
                     <ul class="accordion-ul">
-                        <li><a href="entries/Blockwart/1.html" class="flex px-4 py-1 hover:bg-primary-red">Blockwart</a></li>
-                        <li><a href="entries/The-Red-Eye/1.html" class="flex px-4 py-1 hover:bg-primary-red">The Red Eye</a></li>
-                        <li><a href="entries/Bioresonance-Technology-and-its-Limitations/1.html" class="flex px-4 py-1 hover:bg-primary-red">Bioresonance Limitations</a></li>
-                        <li><a href="entries/Song-of-the-Gods/1.html" class="flex px-4 py-1 hover:bg-primary-red">Song of the Gods</a></li>
-                        <li><a href="entries/Dream-Diary/1.html" class="flex px-4 py-1 hover:bg-primary-red">Dream Diary</a></li>
-                    </ul>
-                </li>
-                <li class="accordion">
-                    <button class="accordion-button w-full bg-primary-red py-0.5 px-4 font-medium hover:bg-white hover:text-black">End</button>
-                    <ul class="accordion-ul">
-                        <li><a href="entries/Letter-from-Mother/1.html" class="flex px-4 py-1 hover:bg-primary-red">Letter from Mother</a></li>
-                        <li><a href="entries/Falke%27s-Memory/1.html" class="flex px-4 py-1 hover:bg-primary-red">Falke's Memory</a></li>
-                        <li><a href="entries/Cycle-5309/1.html" class="flex px-4 py-1 hover:bg-primary-red">Cycle 5309</a></li>
+                        <li><a href="entries/Blockwart/1.html" class="flex flex-col px-4 py-1 hover:bg-primary-red sm:flex-row"><div>Blockwart</div><div class="text-sm text-white/80 sm:ml-auto">&lt;Hallway&gt;</div></a></li>
+                        <li><a href="entries/The-Red-Eye/1.html" class="flex flex-col px-4 py-1 hover:bg-primary-red sm:flex-row"><div>The Red Eye</div><div class="text-sm text-white/80 sm:ml-auto">&lt;Alley&gt;</div></a></li>
                     </ul>
                 </li>
             </ul>
         </section>
+
     </main>
 
     <footer class="mt-auto w-full bg-black/50 py-3 text-center text-[.6rem] font-extralight text-white/75">
@@ -164,9 +96,13 @@
 
     <script>
         document.querySelectorAll('.accordion-button').forEach(button => {
-            button.addEventListener('click', () => {
-                const item = button.parentElement;
-                item.classList.toggle('active');
+            button.addEventListener('click', function() {
+                const parent = this.parentElement;
+                // Close others (optional, comment out if you want multiple open)
+                document.querySelectorAll('.accordion').forEach(acc => {
+                    if(acc !== parent) acc.classList.remove('active');
+                });
+                parent.classList.toggle('active');
             });
         });
     </script>
