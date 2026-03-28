@@ -174,8 +174,7 @@ body {
 }
 
 .backups-footer .footer-left {
-  flex: 1;
-  min-width: 200px;
+  text-align: left;
 }
 
 .backups-footer .last-updated-date {
