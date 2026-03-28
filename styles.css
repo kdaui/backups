@@ -161,28 +161,12 @@ body {
 }
 
 .backups-footer {
-  position: relative;
+  text-align: center;
   margin-top: 60px;
   padding: 15px 20px;
   border-top: 1px solid var(--border-color);
   color: var(--text-secondary);
   font-style: italic;
-}
-
-.backups-footer .footer-center {
-  text-align: center;
-  padding-right: 120px;
-}
-
-.backups-footer .last-updated-date {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-style: normal;
-  font-size: 0.75rem;
-  color: var(--text-secondary);
-  opacity: 0.6;
 }
 
 .back-home {
